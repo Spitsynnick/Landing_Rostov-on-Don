@@ -1,0 +1,1882 @@
+/* Desktop*/
+/* Common styles */
+.body {
+    margin: 0;
+    font-family: 'Nunito Sans', 'Arial', sans-serif;
+}
+
+.body * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1438px;
+    margin: 0 auto;
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    outline: 0;
+    border: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', 'Arial', sans-serif;    
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;       
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.heading_h1 {
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;    
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+}
+
+.heading_h2 {
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+.heading_h3 {
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.textcontent {
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.break_mobile {
+    display: none;
+}
+
+.span_mobile {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;      
+}
+
+a:hover {
+    color: #E3B873;
+    cursor: pointer;    
+}
+
+.form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.form input {
+    border: none;
+}
+
+.form input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.agreement {    
+    font-style: normal;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+.agreement_label {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-right: 4px;
+}
+
+.fake::before {
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before {
+    opacity: 1;
+}
+
+.agreement_text {    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;    
+    color: #181818;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;   
+}
+
+.slider_mobile {
+    display: none;
+}
+
+
+/* Header, Footer */
+.header, .footer {
+    background-color: #131313;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;    
+}
+
+.header_container, .footer_container {
+    display: flex;    
+    height: 83px;
+    align-items: center;  
+    padding-top: 5px;     
+}
+
+.header_logo, .footer_logo {    
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-left: 93px;
+}
+
+.header_navigation, .footer_navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 572px; 
+    padding: 0;
+    margin-left: 123px;   
+}
+
+.header_navigation_item:nth-child(-n+5), .footer_navigation_item:nth-child(-n+5) {
+    margin-right: 47px;
+}
+
+.header_phone, .footer_phone {
+    color: #E3B873;
+    text-align: right;
+    text-decoration-line: underline;
+    display: block;    
+    margin-left: 102px;
+}
+
+.header_button, .footer_button {
+    width: 161px;
+    height: 37px;   
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    padding: 13px 33px;
+    margin-left: 45px;
+    font-style: italic;          
+}
+
+
+/* Section Turnkey Repairs */
+.turnkey {
+    background-image: url("../images/turnkey_repair.jpg");
+    background-size: cover;
+    height: 707px;    
+    position: relative;    
+}
+
+.turnkey_container {
+    position: relative;
+    z-index: 1;    
+    padding-top: 191px;
+    padding-left: 134px;
+}
+
+.turnkey_overlay {     
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.turnkey_heading {
+    font-size: 40px;
+    line-height: 53px;    
+}
+
+.rostov {
+    color:  #FFFFFF;    
+}
+
+.turnkey_paragraph {    
+    font-size: 22px;
+    line-height: 36px;    
+    margin: 19px 0 0;
+}
+
+.turnkey_button {    
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+    width: 207px;
+    height: 51px;
+    margin-top: 24px;
+}
+
+.turnkey_button:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.turnkey_button1 {
+    padding: 20px 42px;
+    margin-right: 16px;
+   
+}
+
+.turnkey_button2 {
+    padding: 20px 22px;
+}
+
+
+/* Section Completed projects */
+.projects {
+    height: 1074px;
+    background-color: #131313;       
+}
+
+.projects_container {
+    padding-top: 88px;
+    padding-left: 134px;
+}
+
+.projects_outer_div {
+    display: flex;   
+}
+
+.projects_left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 56px;
+}
+
+.projects_heading {    
+    letter-spacing: -0.07em;   
+    color: #E3B873;
+    margin: 86px 0 25px 0;
+}
+
+.projects_paragraph {    
+    font-size: 14px;
+    line-height: 27px;    
+    margin: 0 0 48px 0;
+}
+
+.projects_repair {
+    display: grid;
+    grid-template-columns: repeat(2, 190px);
+    row-gap: 34px;    
+}
+
+.projects_block {
+    margin: 0;
+    height: 73px;
+}
+
+.projects_block_heading{
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0 0 9px 0;
+}
+
+.projects_block_span {    
+    font-size: 13px;
+    line-height: 21px;   
+    display: block;
+    margin: 0 0 55px 0;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    margin-top: 63px;
+}
+
+.slider_button {
+    background-color: transparent;
+    border: none;
+    padding: 0;    
+}
+
+.arrow_left {
+    margin-right: 29px;
+}
+
+.dot:nth-child(-n + 3) {
+    margin-right: 17px;
+}
+
+.arrow_right {
+    margin-left: 29px;
+}
+
+.slider_button:hover {
+    cursor: pointer;    
+}
+
+.projects_navigation {
+    list-style: none;
+    display: flex;
+    padding: 0;    
+    margin-bottom: 50px;
+}
+
+.projects_navigation_item {
+    margin-right: 60px;
+}
+
+.projects_navigation_link {
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;    
+    color: rgba(255, 255, 255, 0.3);        
+}
+
+.projects_navigation_link:hover {
+    text-decoration-line: underline;    
+}
+
+/* Section Online Control */
+.control {
+    height: 1103px;
+    margin-top: -324px;   
+}
+
+.control_heading {    
+    color: #FFFFFF;
+    margin: 0 0 10px 6px;
+}
+
+.control_icon_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control_icon {
+    display: block;
+}
+
+.control_icon1 {
+    margin-right: 9px;
+}
+
+.control_icon2 {
+    margin-right: 8px;
+}
+
+.control_image {
+    width: 817px;
+    height: 434px;
+    background-image: url("../images/control_image.jpg");
+    background-size: cover;    
+    margin: 31px auto 0;
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+}
+
+.control_image_overlay {    
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.videoplay_icon {
+    position: relative;
+    z-index: 1;   
+}
+
+.control_line {
+    margin-top: 62px;
+    width: 55px;
+    border: none;
+	border-top: 2px solid #E3B873;   
+}
+
+.control_paragraph {    
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin: 30px 0 0 0;
+}
+
+.control_form {
+    margin: 78px auto 0;
+    width: 769px;    
+}
+
+.control_form label {    
+    color: rgba(54, 54, 54, 0.5);
+    transform: rotate(-0.07deg);
+}
+
+.control_form input {
+    width: 231px;    
+    border-bottom: 1px solid #36363630;    
+}
+
+.control_form input::placeholder {    
+    color: #363636;
+    margin-bottom: 148px;
+}
+
+.control_form_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control_input {
+    display: grid;
+    grid-template-rows: repeat(2, 23px);        
+}
+
+.control_button {
+    padding: 20px 75px 10px;
+    width: 200px;
+    height: 51px;   
+    border-radius: 2px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control_agreement {
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+}
+
+.control_button_mobile {
+    display: none;
+}
+
+
+/* Section Types of repair Part 1 */
+.repair {
+    height: 1648px;
+}
+
+.repair_heading {   
+    color: #181818;
+    margin: 0 auto;
+}
+
+.repair_icon {
+    display: flex;
+    justify-content: center;
+    margin: 12px auto 0;
+}
+
+.repair_types {   
+    margin-top: 31px;
+    display: flex;
+    justify-content: center;
+}
+
+.repair_type {
+    width: 392px;
+    background-repeat: no-repeat;
+    margin: 0 15px;
+}
+
+.redecorating {
+    background-image: url("../images/redecorating.jpg");
+}
+
+.overhaul {
+    background-image: url("../images/overhaul.jpg");
+}
+
+.designer_repair {
+    background-image: url("../images/designer_repair.jpg") ;
+}
+
+.repair_type_content {
+    margin: 294px 31px 0;       
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    height: 286px;
+}
+
+.repair_type_heading {
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin: 0 0 9px 34px;
+    padding-top: 21px;
+}
+
+.repair_type_options {
+    padding: 0;
+    list-style-type: none;
+    margin: 0 0 40px 33px;    
+}
+
+.repair_type_item {    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.repair_type_price {
+    margin-top: -25px;   
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repair_type_price p {
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/* Section Types of repair Part 2 */
+.repair2 {
+    display: flex;    
+    margin-top: 151px;
+}
+
+.repair2_left {
+    width: 703px;
+    height: 645px;
+    background-image: url("../images/repair_background.png");
+    background-size: cover;    
+}
+
+.repair2_items {
+    margin-top: 101px;
+    margin-left: 226px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 518px;
+}
+
+.repair2_item {
+    display: flex;
+    align-items: center;
+}
+
+.repair_4icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.repair_4icons > img {
+    display: block;
+}
+
+.icon_number {
+    position: absolute;
+    top: 27px;
+    left: 33px;    
+    margin: 0;
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.repair_4icons_paragraph {    
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;    
+}
+
+.paragraph1 {
+    margin-top: -5px;
+    margin-left: -8px;
+}
+
+.paragraph2 {
+    margin-top: -2px;
+    margin-left: -7px;
+}
+
+.paragraph3 {
+    margin-top: 2px;
+    margin-left: -9px;
+}
+
+.paragraph4 {
+    margin-top: 2px;
+    margin-left: -10px;
+}
+
+.repair_form {
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    width: 506px;
+    height: 509px;
+    padding: 28px 49px; 
+    margin-top: 106px;
+    margin-left: 131px;      
+}
+
+.repair_form_inner {    
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.repair_form_heading {
+    margin: 0 0 34px 0;    
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;    
+}
+
+.repair_input {
+    display: grid;
+    grid-template-rows: repeat(2, 23px);    
+    margin-bottom: 52px;        
+}
+
+.repair_input3 {
+    margin-bottom: 4px;
+}
+
+.repair_form label {    
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.repair_form input {
+    width: 408px;    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent; 
+    font-family: 'Nunito Sans', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.repair_form input::placeholder {    
+    color:#FFFFFF;    
+}
+
+.repair_agreement {
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 0 34px 0;
+}
+
+.repair_agreement .fake {
+    margin-right: 4px;
+}
+
+.repair_agreement .agreement_text {    
+    color: #FFFFFF;
+}
+
+.repair_button {
+    align-self: flex-end;
+    width: 213px;
+    height: 51px;
+    padding: 19px 21px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;   
+}
+
+.pigIcon img {
+    display: block;
+    margin-right: 5px;
+}
+
+.pigIcon {
+    display: flex;    
+    align-items: center;
+    margin-top: -1px;
+    margin-left: 845px;
+}
+
+.pigIcon_paragraph {
+    margin-top: 0;    
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+
+/* Section Fantasies */
+.fantasies {
+    background-image: url("../images/fantasies_background.jpg");
+    background-size: cover;
+    height: 864px;    
+    position: relative; 
+    margin-top: 150px;   
+}
+
+.fantasies_container {
+    position: relative;
+    z-index: 1;    
+    display: flex;
+}
+
+.fantasies_overlay { 
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.fantasies_left {
+    margin-top: 137px;
+    margin-left: 99px;
+    width: 411px;
+}
+
+.fantasies_heading {   
+    color: #E3B873;
+    margin-top: 0;
+}
+
+.fantasies_navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    height: 530px;
+    margin-top: 34px;    
+}
+
+.fantasies_navigation_link {    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;      
+}
+
+.fantasies_navigation_link:hover {   
+    text-decoration-line: underline;       
+}
+
+.fantasies_middle {    
+    margin-left: 77px;
+}
+
+.fantasies_right {    
+    margin-left: 43px;
+}
+
+.fantasies_img {
+    display: block;
+}
+
+.fantasies_img01 {
+    margin-top: -41px;
+}
+
+.fantasies_img02 {
+    margin-top: 34px;    
+}
+
+.fantasies_img03 {
+    margin-top: -113px;    
+}
+
+.fantasies_img04 {
+    margin-top: 31px;    
+}
+
+
+/* Section Our Clients */
+.clients {
+    height: 999px;
+    background-image: url("../images/clients_background_left.png"), url("../images/clients_background_right.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, bottom right;
+}
+
+.clients_heading {    
+    color: #181818;
+    margin: 107px auto 0;
+}
+
+.clients_icon {
+    display: block;
+    margin: 13px auto 0;
+}
+
+.clients_paragraph {
+    margin: 21px auto 0;    
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+}
+
+.clients_content {
+    margin: 55px auto 0;
+    display: flex;
+    justify-content: space-between;
+    width: 1236px;
+}
+
+.client {
+    width: 376px;
+    height: 455px;
+}
+
+.photo_name {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.client_photo {
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin-right: 23px;
+}
+
+.client_name {
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+
+.client_paragraph1, .client_paragraph2{   
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;    
+}
+
+.client_paragraph1 {
+    margin: 12px 0 0 20px;
+}
+
+.client_paragraph2 {
+    margin: 7px 0 0 20px;
+}
+
+.quadrature_terms {
+    display: flex;    
+    align-items: center;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    width: 294px;
+    height: 54px;
+    margin: 66px 0 0;
+}
+
+.quadrature_icon {
+    display: block;
+    margin-left: 17px;
+}
+
+.quadrature, .terms {
+    font-family: 'Yeseva One','Times New Roman', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;    
+    color: #FFFFFF;
+}
+
+.quadrature {
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.divide_icon, .calendar_icon {
+    display: block;
+    margin-left: 16px;
+}
+
+.terms {
+    margin-left: 14px;
+}
+
+.clients_form {
+    position: relative;
+    z-index: 1;
+    margin: 117px 0 0 285px;      
+    width: 883px;
+    height: 445px;
+    background-color: #131313;
+    padding-top: 33px;
+    z-index: 2;
+}
+
+.clients_form_heading {    
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.clients_form_top {
+    width: 520px;
+    margin: 43px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients_form_bottom {
+    width: 520px;
+    margin: 53px auto 0;
+}
+
+.clients_input {
+    width: 231px;
+    display: grid;
+    grid-template-rows: repeat(2, 21px);           
+}
+
+.clients_input3 {
+    width: 520px;
+}
+
+.clients_form label {   
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.clients_form input {    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent;     
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.clients_form input::placeholder {    
+    color:#FFFFFF;    
+}
+
+.clients_agreement {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0;
+}
+
+.clients_agreement .fake {
+    margin-right: 9px;
+}
+
+.clients_agreement .agreement_text {    
+    color: #FFFFFF;
+}
+
+.clients_button {   
+    width: 200px;
+    height: 51px;
+    padding: 19px 54px;
+    font-style: normal;    
+    font-size: 13px;
+    line-height: 27px;    
+    margin: 46px auto 0;
+    display: flex;
+    justify-content: center;    
+}
+
+
+/* Section Address */
+.address {
+    height: 954px;
+    background-image: url("../images/address_background.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.address_container {
+    position: relative;
+    z-index: 1; 
+    padding-top: 273px;   
+}
+
+.address_overlay { 
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 100%, rgba(24, 24, 24, 0.72) 100%);
+}
+
+.address_image_mobile {
+    display: none;
+}
+
+.address_heading {    
+    color: #E3B873;
+    margin: 0 auto 0;
+}
+
+.address_icons {
+    display: block;
+    margin: 24px auto 0;
+}
+
+.address_map {
+    display: block;
+    margin: 42px auto 0;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #181818;
+}
+
+.footer_container {
+    height: 133px;
+}
+
+
+
+/* Desktop, width < 1370 px */
+@media screen and (max-width: 1370px) {
+    .header_logo, .footer_logo {
+        margin-left: 50px;
+    }
+
+    .header_navigation, .footer_navigation {
+        margin-left: 75px;
+    }
+
+    .projects_left {
+        margin-right: 15px;
+    }
+
+    .pigIcon {
+        margin-left: 810px;       
+    }
+
+    .fantasies_left {
+        width: 350px;
+        margin-left: 70px;
+    }
+}
+
+
+
+/* Mobile: */
+@media screen and (max-width: 1299px) {
+    /* Common styles */
+    .container {
+        max-width: 100%;
+        padding: 0 18px;
+    }
+
+    .heading_h2 {        
+        font-size: 22px;
+        line-height: 30px;        
+    }
+
+    .heading_h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .break_desktop {
+        display: none;
+    }
+
+    .break_mobile {
+        display: block;
+    }
+
+    .span_desktop {
+        display: none;
+    }
+
+    .span_mobile {
+        display: inline;
+    }
+
+    .slider_mobile {
+        display: block;                   
+    }
+    
+    .slider_mobile_buttons {           
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    .slider_mobile_button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        padding: 0;  
+    }
+
+    .slider_mobile_button:hover {
+        cursor: pointer;
+    }
+
+    .form input::placeholder {        
+        line-height: 19px;
+    }
+
+    .agreement {        
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+
+    /* Header */
+    .header_container {
+        height: 57px;        
+        justify-content: space-between;
+        padding-top: 5px;        
+    }
+    
+    .header_navigation, .header_button {
+        display: none;
+    }
+
+    .header_logo {            
+        margin-left: 0px;
+    }
+
+    .header_phone {        
+        margin-left: 0;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+
+    /* Section Turnkey Repairs */
+    .turnkey {
+        height: 476px;
+    }
+    
+    .turnkey_container {
+        padding-top: 84px;
+        padding-bottom: 61px;        
+    }
+
+    .turnkey_heading {        
+        font-size: 23px;
+        line-height: 31px;          
+    }
+
+    .turnkey_paragraph {    
+        font-size: 14px;
+        line-height: 19px;    
+        margin: 15px 0 0;
+    }
+
+    .turnkey_button { 
+        width: 100%;           
+        max-width: 100%;
+        font-style: italic;       
+    }
+            
+    .turnkey_button1 {
+        padding: 19px 69px;
+        margin: 51px 0 0 0;       
+    }
+    
+    .turnkey_button2 {
+        padding: 19px 85px;
+        margin: 26px 0 0 0;
+    }
+
+
+    /* Section Completed projects */
+    .projects {
+        height: 725px;       
+    }
+
+    .projects_container {
+        padding-top: 34px;        
+    }    
+
+    .projects_outer_div {
+        flex-direction: column;   
+    }
+
+    .projects_left {        
+        margin: 0;
+    }
+
+    .projects_heading {
+        text-align: center;        
+        margin: 0 0 30px 0;
+    }
+
+    .projects_paragraph {    
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;    
+        margin: 0 0 71px 0;
+    }
+
+    .projects_slider_mobile {
+        background-image: url("../images/sochi_mobile.jpg");
+        background-size: cover; 
+        margin: 0 auto;
+    }
+
+    .projects_slider_buttons {
+        width: 340px;
+        height: 242px;
+        padding: 0 13px 0;
+    }    
+
+    .projects_repair {       
+        grid-template-columns: 160px 180px;
+        row-gap: 22px; 
+        margin: 36px auto 0;   
+    }
+           
+    .projects_block_heading {
+        font-size: 14px;
+        line-height: 19px;        
+        margin: 0 0 13px 0;
+    }
+    
+    .projects_block_span {    
+        font-size: 11px;
+        line-height: 15px;       
+        margin: 0;       
+    }
+    
+    .slider {
+        display: none;
+    }
+
+    .projects_right {
+        display: none;
+    }
+
+
+    /* Section Online Control */
+    .control {
+        height: 828px;
+        margin-top: 0;
+        background-color: #131313;
+    }
+
+    .control_heading {    
+        color: #FFFFFF;
+        margin: 0 auto 17px;
+    }
+
+    .control_image {
+        width: 340px;
+        height: 207px;
+        background-image: url("../images/contorl_image_mobile.jpg");
+        background-size: cover;    
+        margin: 41px auto 0;        
+        box-shadow: 0px 20px 30px rgba(24, 24, 24, 0.1);
+    }
+
+    .videoplay_icon {
+        width: 63px;
+        height: 63px;
+    }
+
+    .control_line {
+        margin-top: 27px;        
+    }
+
+    .control_paragraph {    
+        font-size: 11px;
+        line-height: 19px;        
+        color: #FFFFFF;
+        margin: 19px auto 0;
+    }
+
+    .control_form {
+        margin: 74px auto 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;   
+    }
+    
+    .control_form label {    
+        color: rgba(255, 255, 255, 0.5);        
+    }
+    
+    .control_form input {
+        width: 100%;    
+        border-bottom: 1px solid #FFFFFF;        
+        background-color: transparent;       
+        padding: 0; 
+        color: #FFFFFF;       
+    }
+    
+    .control_form input::placeholder {    
+        color: #FFFFFF;        
+    }
+    
+    .control_form_top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .control_input {
+        display: grid;
+        grid-template-rows: repeat(2, 22px);        
+    }
+
+    .control_input:first-child {
+        margin-bottom: 64px;
+    }
+    
+    .control_button {
+        display: none;
+    }
+    
+    .control_agreement {
+        margin-top: 27px;
+        align-self: flex-start;
+    }
+
+    .agreement_text {
+        color: #FFFFFF;
+    }
+
+    .control_button_mobile {
+        width: 100%;
+        height: 51px;          
+        font-style: normal;
+        font-size: 13px;
+        line-height: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 59px;
+        padding-top: 7px;
+    }
+
+
+    /* Section Types of repair */
+    .repair {
+        height: 1736px;
+    }
+
+    .repair_heading {
+        margin-top: 81px;
+    }
+
+    .repair_icon {       
+        margin: 15px auto 0;
+    }
+
+    .repair_types {   
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .repair_type {
+        width: 100%;        
+        margin: 0;
+        background-size: contain;
+        background-repeat: repeat-x;
+    }
+
+    .repair_type:nth-child(-n+2) {
+        margin-bottom: 79px;
+    }
+    
+    .repair_type_content {
+        margin: 223px 0 0 0;
+        width: 80%;
+        height: 241px;        
+    }
+
+    .repair_type_heading {        
+        font-size: 15px;
+        line-height: 21px;        
+        margin: 0 0 9px 31px;        
+    }
+
+    .repair_type_options {        
+        margin: 0 0 16px 33px;    
+    }
+
+    .repair_type_item {       
+        line-height: 22px;        
+    }
+
+    .repair_type_price {
+        margin-top: 16px;        
+        width: 190px;
+        height: 40px;       
+    }
+    
+    .repair_type_price p {        
+        font-size: 15px;
+        line-height: 21px;
+        margin: 0;        
+    }    
+
+    .repair2 {
+        display: none;
+    }
+
+    .pigIcon {
+        display: none;
+    }
+
+
+    /* Section Fantasies */
+    .fantasies {
+        background-image: none;        
+        height: 213px;    
+        position: static; 
+        margin: 0;          
+    }
+
+    .fantasies_container {
+        position: static;          
+        display: block;
+    }
+
+    .fantasies_overlay {
+        display: none;
+    }
+
+    .fantasies_left {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .fantasies_heading {           
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .fantasies_navigation {
+        display: none;
+    }
+
+    .fantasies_middle, .fantasies_right {    
+        display: none;
+    }
+
+    .fantasies_slider_mobile {
+        background-image: url("../images/fantasies_slider.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 242px; 
+        margin: 32px auto 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .fantasies_slider_buttons {
+        width: 340px;
+        height: 242px;
+        padding: 0 13px 0;
+    }
+    
+    
+    /* Section Our Clients */
+    .clients {
+        height: 670px;
+        background-image: none;
+        background-color: #131313;
+        padding-top: 121px;        
+    }
+
+    .clients_heading, .clients_icon, .clients_paragraph, .clients_content {
+        display: none;
+    }
+
+    .clients_form {       
+        margin: 50px auto 0;
+        padding: 0;      
+        width: 100%;        
+    }
+    
+    .clients_form_heading {         
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .clients_form_top {
+        width: 100%;
+        margin: 50px auto 0;        
+        flex-direction: column;        
+    }
+    
+    .clients_form_bottom {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .clients_input {
+        width: 100%;        
+        margin-bottom: 66px;          
+    }
+    
+    .clients_input3 {        
+        margin-bottom: 0;          
+    }       
+        
+    .clients_form input {    
+        border-bottom: 1px solid #FFFFFF;       
+    }    
+        
+    .clients_agreement {        
+        justify-content: flex-start;
+        margin: 26px auto 0;
+    }
+    
+    .clients_agreement .fake {
+        margin-right: 5px;
+    }  
+    
+    .clients_button {   
+        width: 100%;       
+        padding-top: 15px;        
+        margin: 63px auto 0;        
+    }
+    
+    
+    /* Section Address */
+    .address {
+        height: 525px;
+        background-image: none;
+        background-color: #131313;        
+        position: static;
+        padding-top: 46px;
+    }
+    
+    .address_container {
+        position: static;          
+    }
+    
+    .address_overlay { 
+        display: none;
+    }
+
+    .address_image_mobile {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .address_image_mobile > img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .address_heading {    
+        color: #E3B873;
+        margin: 40px auto 0;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .address_icons {
+        width: 99px;
+        height: 39px;
+        margin: 21px auto 0;
+    }
+    
+    .address_map {
+        display: none;
+    }
+
+    /* Footer */
+    .footer {
+        display: none;
+    }                   
+}
+
+
+
+/* Mobile, width > 768 px */
+@media screen and (min-width: 769px) and (max-width: 1299px) {
+    /* Common styles */
+    .heading_h2 {        
+        font-size: 27px;
+        line-height: 37px;        
+    } 
+    
+    .heading_h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .break_desktop {
+        display: block;
+    }
+
+    .break_mobile {
+        display: none;
+    }
+
+
+    /* Header, Footer */
+    .header_navigation, .footer_navigation {        
+        display: flex;
+        justify-content: space-between;         
+        padding: 0;
+        margin: 0 auto;
+        max-width: 420px;           
+    }
+
+    .header_navigation_item:nth-child(-n+5), .footer_navigation_item:nth-child(-n+5) {
+        margin-right: 0;
+    }
+
+
+    /* Section Turnkey Repairs*/
+    .turnkey_heading {        
+        font-size: 40px;
+        line-height: 53px;          
+    }
+
+    .turnkey_paragraph {    
+        font-size: 22px;
+        line-height: 36px;    
+        margin: 19px 0 0;
+    }
+
+    .turnkey_button {        
+        width: 207px;                
+    }
+
+    .turnkey_button1 {
+        padding: 20px 42px;
+        margin-right: 16px;       
+    }
+    
+    .turnkey_button2 {
+        padding: 20px 22px;
+    }
+
+
+    /* Section Completed projects */
+    .projects_container {
+      padding-top: 20px;  
+    }
+
+    .projects_paragraph {    
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 35px;       
+    }
+
+    .slider_mobile_buttons {
+        width: 380px;
+        height: 270px;
+    }
+
+    .projects_repair {       
+        grid-template-columns: repeat(2, 190px);
+        row-gap: 34px; 
+        margin: 27px auto 0;   
+    }
+
+    .projects_block_heading {
+        font-size: 18px;
+        line-height: 25px;        
+        margin: 0 0 13px 0;
+    }
+
+    .projects_block_span {    
+        font-size: 13px;
+        line-height: 21px; 
+    } 
+
+    
+    /* Section Online Control */    
+    .control_image {  
+        width: 510px;
+        height: 271px;             
+    }
+
+    .control_paragraph {    
+        font-size: 14px;
+        line-height: 27px;        
+    }
+
+    .control_form {
+        margin: 24px auto 0;
+        width: 510px;       
+    }
+    
+    .control_input:first-child {
+        margin-bottom: 41px;
+    }
+         
+    .control_button_mobile {
+        width: 200px;       
+        margin-top: 59px;        
+    }
+
+
+    /* Section Types of repair */       
+    .repair_type_content {
+        margin: 223px auto 0;
+        width: 40%;                       
+    }
+
+    .repair_type_heading {               
+        margin: 0 auto 9px;
+        text-align: center;        
+    }
+
+    .repair_type_options {        
+        margin: 0 auto 16px;
+        width: 75%;    
+    }    
+
+    .repair_type_price {
+        margin: 16px auto 0;           
+    }
+
+
+    /* Section Fantasies */
+     .fantasies_heading { 
+        font-size: 22px;
+        line-height: 30px;         
+    }
+
+    .fantasies_slider_buttons {
+        width: 340px;
+        height: 242px;
+    }
+
+
+    /* Section Our Clients */
+    .clients_form {       
+        max-width: 510px;        
+    }
+
+    .clients_button {   
+        width: 200px;              
+    } 
+
+
+    /* Section Address */
+    .address {
+        padding-top: 30px;
+    }   
+
+    .address_image_mobile > img {        
+        width: 510px;
+    }
+    
+    .address_heading {
+        margin: 10px auto 0;
+    }
+    
+    .address_icons {
+        width: 71px;
+        height: 28px;
+        margin: 10px auto 0;
+    } 
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
