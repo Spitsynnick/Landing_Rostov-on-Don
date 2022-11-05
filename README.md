@@ -1,1 +1,1 @@
-Single-page landing for designer repair agency
+Single-page landing for designer repair agency.
